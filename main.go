@@ -15,9 +15,9 @@ var (
 	window      fyne.Window
 
 	numbers    = false
-	numbersArr = []rune("1234567890")
+	numbersArr = []rune("12345678901234567890")
 	special    = false
-	specialArr = []rune("!@#$%&")
+	specialArr = []rune("!@#$%&!@#$%&!@#$%&")
 	capital    = false
 	capitalArr = []rune("QWERTYUIOPASDFGHJKLZXCVBNM")
 	passwd     = ""
