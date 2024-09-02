@@ -26,18 +26,13 @@ var (
 func main() {
 	application = app.New()
 	window = application.NewWindow("password generator")
+	application.Settings().SetTheme(myTheme{})
 
-	numbersChek := widget.NewCheck("numbers", func(b bool) {
-		numbers = b
-	})
+	numbersChek := widget.NewCheck("numbers", func(b bool) { numbers = b })
 
-	specialCheck := widget.NewCheck("special chars", func(b bool) {
-		special = b
-	})
+	specialCheck := widget.NewCheck("special chars", func(b bool) { special = b })
 
-	capitalCheck := widget.NewCheck("capital letters", func(b bool) {
-		capital = b
-	})
+	capitalCheck := widget.NewCheck("capital letters", func(b bool) { capital = b })
 
 	checks := container.NewHBox(numbersChek, specialCheck, capitalCheck)
 	checksCent := container.NewCenter(checks)
