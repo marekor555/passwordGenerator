@@ -1,5 +1,5 @@
 # passwordGenerator
 This is a simple app for generating passwords made in go.
 # Installing
-WIP: lacking icon
-To install use: `go install .`
+To install use fyne tool:
+`fyne package --target <platform> --name gochat --id com.example.gochat`
